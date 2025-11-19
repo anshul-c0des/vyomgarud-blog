@@ -3,6 +3,31 @@
 @plugin "tailwindcss-animate";
 @import "tw-animate-css";
 
+@theme {
+  /* Brand Colors */
+  --color-brand-orange: #FF7900;
+  --color-brand-orange-dark: #CC5C00;
+  --color-brand-orange-light: #FFF0E5; /* Used for subtle background accents (e.g., CTA background) */
+
+  /* Primary Neutrals (Black/White) */
+  --color-neutral-black: #000000;
+  --color-neutral-white: #FFFFFF;
+
+  /* Neutral Gray Scale (Expanded for better dark/light mode contrast) */
+  --color-neutral-gray-100: #f7f7f7; /* Very Light Gray (Light Mode BG/Borders) */
+  --color-neutral-gray-200: #e5e5e5; /* Light Gray */
+  --color-neutral-gray-300: #cccccc; /* Medium-Light Gray (Borders/Dividers) */
+  --color-neutral-gray-400: #999999; /* Text in Dark Mode / Subtitles in Light Mode */
+  --color-neutral-gray-500: #666666; /* Subtitles in Light Mode / Text in Dark Mode */
+  --color-neutral-gray-600: #444444; /* Standard Text in Light Mode */
+  --color-neutral-gray-700: #222222; /* Darker Element in Dark Mode (Card Border) */
+  --color-neutral-gray-800: #1a1a1a; /* Dark Card Background */
+  --color-neutral-gray-900: #0d0d0d; /* Very Dark Gray (Dark Mode BG/Gradient start) */
+
+  /* Typography */
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif; /* Added for body content readability */
+}
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

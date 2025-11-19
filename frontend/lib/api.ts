@@ -4,13 +4,13 @@ const API_URL = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
 export async function fetchAPI(endpoint: string) {
   try {
-    // Axios automatically encodes URLs
     const res = await axios.get(`${API_URL}/api/${endpoint}`);
     return res.data;
   } catch (err: any) {
-    // Provide better error messages
     throw new Error(
-      `Failed to fetch ${endpoint}: ${err.response?.status} ${err.response?.statusText || err.message}`
+      `Failed to fetch ${endpoint}: ${err.response?.status} ${
+        err.response?.statusText || err.message
+      }`
     );
   }
 }
